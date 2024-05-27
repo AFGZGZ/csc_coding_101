@@ -1,0 +1,372 @@
+import { CodeSandbox, YouTube } from "mdx-embed";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import dark from "react-syntax-highlighter/dist/esm/styles/prism/a11y-dark";
+import codeBlocks from "./CodeBlocks.tsx";
+
+# SI LA TECNOLOGÍA MUEVE EL MUNDO Y EL CÓDIGO MUEVE LA TECNOLOGÍA...
+
+### ¿No te mueve a ti saber más de cómo funciona?
+
+Exploremos el lenguaje universal que impulsa la innovación y el progreso.
+
+![portada-bg](portada-bg.jpg?height=100vh&position=absolute&top=0&right=0&margin=0&zIndex=-1&opacity=0.1)
+
+---
+
+¡Hola mundo!
+
+# ¿Y ESTE TIO QUIEN ES?
+
+- Rebotado de la educación tradicional.
+- Programadar autodidacta.
+- Ex-trabajador de consultora tecnológica.
+- Re-emprendedor.
+  ![lil-axel](lil-axel.png?height=80vh&position=absolute&top=0&right=0&margin=0&zIndex=-1)
+
+---
+
+# Razones para aprender
+
+- Oportunidades laborales y de emprendimiento.
+- Proyectos personales.
+- Capacidad de crear impacto en tu entorno.
+- Por diversión.
+- Desarrollo cognitivo.
+
+---
+
+# Cuando empiezas a darle caña...
+
+![mind-blown](https://media1.tenor.com/m/tvFWFDXRrmMAAAAd/blow-mind-mind-blown.gif?height=100vh&position=absolute&top=0&right=0&margin=0&zIndex=-1&opacity=0.4)
+
+- Pensamiento analítico +💯
+- Resolución de problemas +💯
+- Creatividad +💯
+- Resiliencia +💯
+
+---
+
+# JAVASCRIPT
+
+### ¿Qué es?
+
+Es el lenguaje de internet.
+
+### ¿Por qué empezar con el?
+
+- Mismos conceptos fundamentales.
+- Multitud de recursos y amplia comunidad.
+- Facilidad de acceso e inmediatez a la hora de ver resultados (código interpretado).
+- Puedes crear absolutamente de TODO (No solo páginas web).
+
+---
+
+# ANTES DE COMENZAR
+
+Igual que cuando cocinamos no aprendemos las recetas de memoria y vamos mejorando con la practica, con la programación memorizar no debería ser el objetivo, es mucho más util si nos centramos en:
+
+- Establecer familiaridad.
+- Empezar a "entrenar" al cerebro para plantear soluciones.
+- Saber buscar las piezas que necesitamos.
+
+---
+
+# QUE VAMOS A VER
+
+- Variables
+- Tipos de datos que pudo alamacenar en las variables.
+- Funciones.
+- Condicionales.
+- Bucles.
+- Herramientas para comprobaciones.
+
+---
+
+# Y AHORA SI... ¡AL TURRÓN!
+
+![al-turron](https://media1.tenor.com/m/BeIzo45F2Y0AAAAC/humor-amarillo-al-turron.giff?height=100vh&position=absolute&top=0&right=0&margin=0&zIndex=-1&opacity=0.4)
+
+---
+
+# VARIABLES
+
+Una variable es como una caja en la que puedes guardar datos. Esta caja tiene un nombre que usamos para referirnos a los datos guardados en ella.
+
+**Los nombres de las variables no pueden contener espacios.**
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.variableExample}
+</SyntaxHighlighter>
+
+---
+
+# ¿LOCAL O GLOBAL?
+
+Si la variable está declarada dentro de una función esta sera de caracter **LOCAL** por lo cual solo se podra acceder al valor dentro de la propia función.
+
+Una variable **GLOBAL** es declarada fuera y puede accederse desde otras funciones.
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.varScope}
+</SyntaxHighlighter>
+
+---
+
+# VARIABLE NO MODIFICABLE
+
+Si queremos fijar una variable para que no pueda ser modificada la declararemos usando **const** (de constante) en lugar de var.
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.constExample}
+</SyntaxHighlighter>
+
+---
+
+# TIPOS DE DATOS
+
+### Los tipos de datos más comunes que podemos almacenar en una variable son:
+
+- Strings
+- Números
+- Boleanos
+- Arrays
+- Objetos
+
+---
+
+# STRINGS
+
+Texto (Envolvemos los datos usando " " o ' ' para indicar que se trata de texto)
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.varString}
+</SyntaxHighlighter>
+
+---
+
+# BOLEANOS
+
+Indican verdadero o falso (true/false)
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.varBoolean}
+</SyntaxHighlighter>
+
+---
+
+# ARRAYS
+
+Colecciones de datos. Añadimos los datos entre [ ] separados por comas.
+
+Para acceder a cada "entrada" usamos bracket notation: **nombreDeVariable[posición]**
+
+¡¡Empezamos a contar desde 0!!
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.varArray}
+</SyntaxHighlighter>
+
+---
+
+# OBJETOS
+
+Colecciones de datos con llave y valor. Añadimos los datos entre \{ \} con la estructura llave: valor y separados por una coma.
+
+Para acceder a un valor usamos dot notation: **nombreDeVariable.llave**
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.varObject}
+</SyntaxHighlighter>
+
+---
+
+# FUNCIONES
+
+Cuando queremos hacer operaciones con los datos los hacemos a traves de las funciones que son como instrucciones compuestas de tres pasos: **input o entrada, operaciones y output o salida**.
+
+**Una vez declarada la función no nos devemos olvidar de llamarla con los datos que necesitemos para ejecutarla y obtener el resultado.**
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.functionExample}
+</SyntaxHighlighter>
+---
+
+# ENTRADA (INPUT)
+
+A la función le pasamos los datos con los que trabajar mediante los **parametros**.
+
+Tenemos que declararlos con un nombre entre \( \) y pasarles el valor cuando llamamos la función.
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.params}
+</SyntaxHighlighter>
+
+---
+
+# OPERACIONES
+
+Dentro de \{ \} realizaremos las operaciones necesarias para transformar nuestros datos para obtener el resultado deseado
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.operations}
+</SyntaxHighlighter>
+
+---
+
+### EJEMPLOS DE OPERACIONES
+
+- Cálculos matemáticos (con x++ o x-- podemos hacer +1/-1 directamente).
+- Manipulación de variables.
+- Podemos llamar a otras funciones.
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.operationExp}
+</SyntaxHighlighter>
+---
+
+# SALIDA (OUTPUT)
+
+Normalmente devolveremos el resultado de las operaciones realizadas en la funcion usando **return**, también podemos asignar valores directamente a las variables.
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.returnExample}
+</SyntaxHighlighter>
+
+---
+
+# CONDICIONALES
+
+Se usan para que el código ejecute diferentes bloques basándose en si una condición es verdadera o falsa y nos permiten preparar la lógica para responda a diferentes situaciones de manera dinámica. Podemos usar los siguientes tipos:
+
+- **if** (si): Si se cumple esta condición...
+- **else if**: Lo usaremos para concatenar mas condiciones.
+- **else** (si no): Si las condiciones anteriores no se cumplen...
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.conditionalSyntaxt}
+</SyntaxHighlighter>
+
+---
+
+### EJEMPLO
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.conditionals}
+</SyntaxHighlighter>
+
+---
+
+### OPERADORES PARA CONDICIONALES
+
+- IGUAL (valor): **==**
+- IGUAL (tipo y valor): **===**
+- NO IGUAL: **!=** / **!==**
+- MENOR QUE: **&lt;**
+- MENOR O IGUAL QUE: **&lt;=**
+- MAYOR QUE: **&gt;**
+- MAYOR O IGUAL QUE: **&gt;=**
+- Y: **&&** (Si se cumplen ambas)
+- O: **||** (Si se cumplen alguna)
+
+---
+
+# BUCLES
+
+Los bucles repiten un bloque de código múltiples veces y/o repasan listas de datos hasta que se cumple una condición que rompe la repetición esto permite automatizar tareas repetitivas.
+
+**for**: Lo usaremos cuando tenemos un número fijo de repeticiones.
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.loopExample}
+</SyntaxHighlighter>
+
+---
+
+**while**: Se repite mientras la condición sea verdadera.
+
+**do...while**: Como al while, pero siempre se ejecuta al menos una vez.
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.while}
+</SyntaxHighlighter>
+
+---
+
+### HERRAMIENTAS PARA COMPROBACIONES
+
+- console.log(): Imprime en consola los datos que le indiquemos entre parentesis.
+- typeof: Nos permite conocer el tipo de datos de una variable.
+- .length: Cuenta el numero de caracteres o entradas.
+
+<SyntaxHighlighter language="javascript" style={dark}>
+  {codeBlocks.debugTools}
+</SyntaxHighlighter>
+
+---
+
+# EL FLOW
+
+![flow](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmF5M2hkMnBwbW1mbzQ5czNyY2l6Z25oZGk2MHgwZ3ViZWJlcW5rciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JoP7Ml6qI2SvdZy3Ki/giphy.gif?height=100vh&position=absolute&top=0&right=0&margin=0&zIndex=-1&opacity=0.3)
+
+### !El orden de escritura es importante!
+
+Las maquinas como los humanos leen de arriba a abajo asi que:
+
+- Las funciones se ejecutaran en dicho orden.
+- ¡No podremos usar las cosas antes de declararlas!
+
+---
+
+# EL RETO
+
+![mind-blown](https://i.imgur.com/zFxddTI.gif?height=100vh&position=absolute&top=0&right=0&margin=0&zIndex=-1&opacity=0.3)
+
+### Imagina como sería enseñar tu receta favorita si la tuviese que cocinar un robot que solo entiende Javascript.
+
+¡Dadme instrucciones enclenques humanos!
+
+Si no fluye la inspiración [AQUÍ](https://github.com/AFGZGZ/lazy.cooking) tenemos algunos ejemplos.
+
+---
+
+# Aquí podemos cacharrear 👇
+
+<CodeSandbox codeSandboxId="react-new" />
+
+También podeís usar la consola del navegador (F12 en Chrome) o [Codepen](https://codepen.io/pen/)
+
+---
+
+### Recursos (gratuitos y en castellano)
+
+[Fundamentos de JavaScript](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+
+[FreeCodeCamp](https://www.freecodecamp.org/espanol/)
+
+[Harvard CS50 con subtítulos en castellano](https://www.youtube.com/watch?v=QXc_ozsH_cg&list=PLhQjrBD2T382v3ivzfqV_XtNMhREadjAr)
+
+[Khan Academy](https://es.khanacademy.org/computing/computer-programming)
+
+[Google actívate](https://skillshop.exceedlms.com/student/catalog/list?inline_search=true&category_ids=7880&duration=&difficulty=&sort=relevance_category_sort&featured=&course_type=all&filter=&search=programaci%C3%B3n)
+
+[Coursera](https://www.coursera.org/) (La opción de "auditar" los cursos es gratuita)
+
+---
+
+![csc](csc.png?height=100vh&position=absolute&top=0&right=0&margin=0&zIndex=-1&opacity=0.1)
+
+# Contacto:
+
+- [Red Zac](https://www.zaragoza.es/zac/members/3668238)
+
+- [Grupo de Telegram](https://t.me/+I0z9V1vhMBNlOTRk)
+
+- Disponible pronto [www.coolschoolclub.com](https://www.coolschoolclub.com)
+
+---
+
+Puedes encontrar está presentacion en:
+
+Sientete libre de distribuirla, modificarla o usarla como quieras.
+
+Made with: [ReMDX](https://github.com/nkzw-tech/remdx)
